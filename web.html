@@ -1,0 +1,222 @@
+<!doctype html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Piring — Menu Planner</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=IBM+Plex+Mono:wght@400;500;600;700&family=Inter:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <nav class="topnav">
+      <div class="nav-inner">
+        <button class="brand" data-nav="landing">
+          <span class="brand-mark">◐</span> MAKAN BERGIZI
+        </button>
+        <div class="nav-links">
+          <button class="nav-btn" data-nav="landing">Beranda</button>
+          <button class="nav-btn nav-btn--cta" data-nav="planner">
+            Buka Planner
+          </button>
+        </div>
+      </div>
+    </nav>
+
+    <main id="page-landing" class="page">
+      <section class="hero">
+        <div class="hero-inner">
+          <div class="hero-copy">
+            <p class="eyebrow">Perencana menu harian</p>
+            <h1>Susun menu makan, <span class="hl">hitung otomatis.</span></h1>
+            <p class="hero-sub">
+              Pilih menu dari daftar, dan Piring langsung menotal kalori, harga,
+              dan mengecek apakah gizimu sudah seimbang — semua berubah langsung
+              saat kamu klik.
+            </p>
+            <div class="hero-actions">
+              <button class="btn btn-primary" data-nav="planner">
+                Mulai Susun Menu →
+              </button>
+              <a class="btn btn-ghost" href="#cara-kerja">Lihat cara kerja</a>
+            </div>
+            <div class="hero-stats">
+              <div class="stat">
+                <span class="stat-num">1.240+</span
+                ><span class="stat-label">menu disusun</span>
+              </div>
+              <div class="stat">
+                <span class="stat-num">26</span
+                ><span class="stat-label">pilihan menu</span>
+              </div>
+              <div class="stat">
+                <span class="stat-num">5</span
+                ><span class="stat-label">kategori gizi</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="hero-receipt" aria-hidden="true">
+            <div class="receipt">
+              <div class="receipt-head">
+                <span>PIRING</span>
+                <span>STRUK MENU</span>
+              </div>
+              <div class="receipt-line">
+                <span>Nasi Goreng Spesial</span><span>450 kkal</span>
+              </div>
+              <div class="receipt-line">
+                <span>Ayam Bakar Madu</span><span>280 kkal</span>
+              </div>
+              <div class="receipt-line">
+                <span>Tumis Kangkung</span><span>90 kkal</span>
+              </div>
+              <div class="receipt-line">
+                <span>Pisang</span><span>105 kkal</span>
+              </div>
+              <div class="receipt-line">
+                <span>Es Teh Manis</span><span>90 kkal</span>
+              </div>
+              <div class="receipt-divider"></div>
+              <div class="receipt-total">
+                <span>TOTAL KALORI</span><span>1.015 kkal</span>
+              </div>
+              <div class="receipt-total">
+                <span>TOTAL HARGA</span><span>Rp 66.000</span>
+              </div>
+              <div class="receipt-badge">✓ MENU SEIMBANG</div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="marquee" aria-hidden="true">
+        <div class="marquee-track">
+          <span>POKOK</span><span>•</span><span>LAUK-PAUK</span><span>•</span
+          ><span>SAYUR</span><span>•</span><span>BUAH</span><span>•</span
+          ><span>MINUMAN</span><span>•</span> <span>POKOK</span><span>•</span
+          ><span>LAUK-PAUK</span><span>•</span><span>SAYUR</span><span>•</span
+          ><span>BUAH</span><span>•</span><span>MINUMAN</span><span>•</span>
+        </div>
+      </section>
+
+      <section class="section" id="cara-kerja">
+        <p class="eyebrow">Cara kerja</p>
+        <h2 class="section-title">Tiga langkah, tanpa reload halaman.</h2>
+        <div class="steps">
+          <div class="step">
+            <span class="step-num">01</span>
+            <h3>Centang menu</h3>
+            <p>
+              Buka halaman Planner, telusuri tabel 26 menu lengkap dengan
+              kategori, kalori, dan harga. Centang sesuka hati.
+            </p>
+          </div>
+          <div class="step">
+            <span class="step-num">02</span>
+            <h3>Panel struk terisi</h3>
+            <p>
+              Setiap centang langsung menambah gambar ke tumpukan, dan menotal
+              ulang kalori dan harga di panel hasil.
+            </p>
+          </div>
+          <div class="step">
+            <span class="step-num">03</span>
+            <h3>Cek keseimbangan</h3>
+            <p>
+              Checklist 5 kategori otomatis tercentang saat terpenuhi. Lengkapi
+              semua untuk membuka badge Menu Seimbang.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section class="section section--muted">
+        <p class="eyebrow">Menu favorit</p>
+        <h2 class="section-title">
+          Beberapa pilihan yang sering disusun bareng.
+        </h2>
+        <div class="highlight-grid" id="highlight-grid"></div>
+      </section>
+
+      <section class="cta-band">
+        <h2>Sudah tahu mau makan apa hari ini?</h2>
+        <p>Buka Planner dan lihat totalnya seketika.</p>
+        <button class="btn btn-primary btn-lg" data-nav="planner">
+          Buka Menu Planner →
+        </button>
+      </section>
+    </main>
+
+    <main id="page-planner" class="page page--hidden">
+      <div class="planner-header">
+        <div>
+          <p class="eyebrow">Menu Planner</p>
+          <h1 class="planner-title">Susun menu, lihat totalnya langsung.</h1>
+        </div>
+        <div class="planner-filters" id="category-filters"></div>
+      </div>
+
+      <div class="planner-layout">
+        <section class="menu-table-wrap">
+          <table class="menu-table" id="menu-table">
+            <thead>
+              <tr>
+                <th class="col-img">Gambar</th>
+                <th class="col-name">Nama Menu</th>
+                <th class="col-cat">Kategori</th>
+                <th class="col-cal">Kalori</th>
+                <th class="col-price">Harga</th>
+                <th class="col-pick">Pilih</th>
+              </tr>
+            </thead>
+            <tbody id="menu-tbody">
+              <!-- generated by JS -->
+            </tbody>
+          </table>
+        </section>
+
+        <aside class="result-panel" id="result-panel">
+          <div class="receipt receipt--live">
+            <div class="receipt-head">
+              <span>PIRING</span>
+              <span>HASIL PILIHAN</span>
+            </div>
+
+            <div class="stack-zone" id="stack-zone">
+              <p class="empty-state" id="empty-state">
+                Belum ada menu dipilih.<br />Centang menu di tabel untuk mulai.
+              </p>
+            </div>
+
+            <div class="receipt-divider"></div>
+
+            <div class="receipt-total">
+              <span>TOTAL KALORI</span><span id="total-kalori">0 kkal</span>
+            </div>
+            <div class="receipt-total">
+              <span>TOTAL HARGA</span><span id="total-harga">Rp 0</span>
+            </div>
+
+            <div class="receipt-divider"></div>
+
+            <ul class="category-checklist" id="category-checklist">
+              <!-- generated by JS -->
+            </ul>
+
+            <div class="badge-slot">
+              <div class="balanced-badge" id="balanced-badge">
+                <span class="badge-star">✓</span> Menu Seimbang!
+              </div>
+            </div>
+          </div>
+        </aside>
+      </div>
+    </main>
+
+    <script src="script.js"></script>
+  </body>
+</html>
